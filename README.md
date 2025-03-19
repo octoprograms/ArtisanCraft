@@ -19,9 +19,6 @@ Welcome to ArtisanCraft, a unique marketplace for discovering and purchasing han
     <title>ArtisanCraft - Token Marketplace</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        /* CSS styles here */
-    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -34,46 +31,6 @@ Welcome to ArtisanCraft, a unique marketplace for discovering and purchasing han
             <div class="connect-wallet" onclick="connectWallet()">Connect Wallet</div>
         </div>
     </nav>
-
-    <section class="hero-section">
-        <h1 class="hero-title">Discover Unique Handmade Treasures</h1>
-        <p class="hero-subtitle">Shop exclusive artisan creations using ArtisanCraft Tokens (ACT)</p>
-    </section>
-
-    <div class="products-grid">
-        <div class="product-card">
-            <img src="https://via.placeholder.com/300x250" alt="Product" class="product-image">
-            <div class="product-details">
-                <h3>Handcrafted Ceramic Vase</h3>
-                <p class="product-price">45.50 ACT</p>
-                <button class="buy-button" onclick="handleBuy()">Purchase</button>
-            </div>
-        </div>
-        <!-- Add more product cards similarly -->
-    </div>
-
-    <script>
-        function connectWallet() {
-            // Simulated wallet connection
-            document.querySelector('.token-balance').innerText = '150.00 ACT';
-            document.querySelector('.connect-wallet').innerText = '0x1234...5678';
-            alert('Wallet connected successfully!');
-        }
-
-        function handleBuy() {
-            const isConnected = document.querySelector('.connect-wallet').innerText !== 'Connect Wallet';
-            
-            if (!isConnected) {
-                alert('Please connect your wallet first!');
-                return;
-            }
-            
-            // Simulated purchase
-            if (confirm('Confirm purchase?')) {
-                alert('Purchase successful! NFT transferred to your wallet.');
-            }
-        }
-    </script>
 </body>
 </html>
 ```
