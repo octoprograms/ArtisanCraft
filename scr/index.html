@@ -1,41 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character set and viewport settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title -->
     <title>ArtisanCraft - Token Marketplace</title>
+    
+    <!-- Google Fonts link for Poppins font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Link to external stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigation bar -->
     <nav class="navbar">
+        <!-- Logo section -->
         <div class="logo">ArtisanCraft</div>
-        <div class="search-bar">
+        
+        <!-- Search bar section -->
+        <div class="search-bar"></div>
             <input type="text" class="search-input" placeholder="Search handmade items...">
         </div>
-        <div class="wallet-section">
+        
+        <!-- Wallet section -->
+        <div class="wallet-section"></div>
+            <!-- Display token balance -->
             <div class="token-balance">0.00 ACT</div>
+            <!-- Button to connect wallet -->
             <div class="connect-wallet" onclick="connectWallet()">Connect Wallet</div>
         </div>
     </nav>
 
+    <!-- Hero section -->
     <section class="hero-section">
+        <!-- Main title -->
         <h1 class="hero-title">Discover Unique Handmade Treasures</h1>
+        <!-- Subtitle -->
         <p class="hero-subtitle">Shop exclusive artisan creations using ArtisanCraft Tokens (ACT)</p>
     </section>
 
+    <!-- Products grid section -->
     <div class="products-grid">
+        <!-- Product card -->
         <div class="product-card">
+            <!-- Product image -->
             <img src="https://via.placeholder.com/300x250" alt="Product" class="product-image">
+            <!-- Product details -->
             <div class="product-details">
+                <!-- Product name -->
                 <h3>Handcrafted Ceramic Vase</h3>
+                <!-- Product price -->
                 <p class="product-price">45.50 ACT</p>
+                <!-- Purchase button -->
                 <button class="buy-button" onclick="handleBuy()">Purchase</button>
             </div>
         </div>
         <!-- Add more product cards similarly -->
     </div>
+    
+    <!-- Link to external JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>
