@@ -20,6 +20,9 @@
 <body>
     <!-- Navigation bar -->
     <nav class="navbar">
+        <!-- Logo section -->
+        <div class="logo">ArtisanCraft</div>
+    
         <!-- Navigation links -->
         <ul class="nav-links">
             <li><a href="#dashboard">Dashboard</a></li>
@@ -28,21 +31,22 @@
             <li><a href="#community">Community</a></li>
             <li><a href="#support">Support</a></li>
         </ul>
-    </nav>
-    <nav class="navbar">
-        <!-- Logo section -->
-        <div class="logo">ArtisanCraft</div>
-        
+    
         <!-- Search bar section -->
-        <div class="search-bar"></div>
+        <div class="search-bar">
             <input type="text" class="search-input" placeholder="Search handmade items...">
         </div>
         
+        <!-- Hamburger Menu for Small Screens -->
+        <div class="hamburger" onclick="toggleNav()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    
         <!-- Wallet section -->
         <div class="wallet-section">
-            <!-- Display token balance -->
             <div class="token-balance">0.00 ACT</div>
-            <!-- Button to connect wallet -->
             <div class="connect-wallet" onclick="connectWallet()">Connect Wallet</div>
         </div>
     </nav>
